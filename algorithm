@@ -1,0 +1,14 @@
+Declare character arrays word and guess to store the word to be guessed and the user's guesses, respectively.
+Declare integer variables i, tries, len, and found.
+Prompt the user to enter the word to be guessed and store it in the word array.
+Get the length of the word using the strlen() function and store it in the len variable.
+Initialize the guess array with dashes to represent the unknown letters of the word.
+Print the length of the word and the initial state of the guess array.
+Loop while the user has not yet found the word and has not yet used up all their tries:
+Prompt the user to enter a letter and store it in the letter variable.
+Loop through each letter in the word to be guessed and compare it with the letter the user entered.
+If the letter matches, set the corresponding letter in the guess array to the letter the user entered and set the match variable to 1.
+If there were no matches, increment the tries variable and print a message to inform the user of the incorrect guess and the number of tries remaining.
+If there were matches, check if the guess array is equal tothe word array. If it is, set the found variable to 1. If not, print a message to inform the user of the correct guess and the current state of the guess array.
+After the loop, check the value of found. If it is 1, print a congratulatory message. If it is 0, print a message to inform the user of the correct word.
+End the program.
